@@ -29,6 +29,9 @@
 		83D753721AA827D200229467 /* ZVCoreDataKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZVCoreDataKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D753781AA827D200229467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83D753791AA827D200229467 /* ZVCoreDataKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZVCoreDataKitTests.swift; sourceTree = "<group>"; };
+		83D753831AA828B800229467 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		83D753841AA828B800229467 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		83D753851AA828B800229467 /* ZVCoreDataKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ZVCoreDataKit.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +56,11 @@
 		83D7535D1AA827D200229467 = {
 			isa = PBXGroup;
 			children = (
-				83D753691AA827D200229467 /* ZVCoreDataKit */,
-				83D753761AA827D200229467 /* ZVCoreDataKitTests */,
+				83D753831AA828B800229467 /* LICENSE */,
+				83D753841AA828B800229467 /* README.md */,
+				83D753851AA828B800229467 /* ZVCoreDataKit.podspec */,
+				83D753691AA827D200229467 /* Source */,
+				83D753761AA827D200229467 /* Tests */,
 				83D753681AA827D200229467 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,13 +74,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		83D753691AA827D200229467 /* ZVCoreDataKit */ = {
+		83D753691AA827D200229467 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				83D7536C1AA827D200229467 /* ZVCoreDataKit.h */,
 				83D7536A1AA827D200229467 /* Supporting Files */,
 			);
-			path = ZVCoreDataKit;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		83D7536A1AA827D200229467 /* Supporting Files */ = {
@@ -85,13 +91,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		83D753761AA827D200229467 /* ZVCoreDataKitTests */ = {
+		83D753761AA827D200229467 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				83D753791AA827D200229467 /* ZVCoreDataKitTests.swift */,
 				83D753771AA827D200229467 /* Supporting Files */,
 			);
-			path = ZVCoreDataKitTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		83D753771AA827D200229467 /* Supporting Files */ = {
@@ -395,6 +401,7 @@
 				83D7537F1AA827D200229467 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83D753801AA827D200229467 /* Build configuration list for PBXNativeTarget "ZVCoreDataKitTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +410,7 @@
 				83D753821AA827D200229467 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

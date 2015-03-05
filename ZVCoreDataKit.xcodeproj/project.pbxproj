@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		832B65A81AA890EA00C856A8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 832B65A61AA890EA00C856A8 /* Model.xcdatamodeld */; };
+		832B65AB1AA8931100C856A8 /* Auth.json in Resources */ = {isa = PBXBuildFile; fileRef = 832B65AA1AA8931100C856A8 /* Auth.json */; };
+		832B65AE1AA8942800C856A8 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832B65AD1AA8942800C856A8 /* Auth.swift */; };
+		832B65B01AA8948C00C856A8 /* AuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832B65AF1AA8948C00C856A8 /* AuthTests.swift */; };
+		832B65BD1AA8974E00C856A8 /* AERecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832B65BC1AA8974E00C856A8 /* AERecord.swift */; };
+		832B65BF1AA89B1000C856A8 /* ZVTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832B65BE1AA89B1000C856A8 /* ZVTestCase.swift */; };
 		83D7536D1AA827D200229467 /* ZVCoreDataKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 83D7536C1AA827D200229467 /* ZVCoreDataKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83D753731AA827D200229467 /* ZVCoreDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D753671AA827D200229467 /* ZVCoreDataKit.framework */; };
 		83D7537A1AA827D200229467 /* ZVCoreDataKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D753791AA827D200229467 /* ZVCoreDataKitTests.swift */; };
@@ -23,6 +29,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		832B65A51AA8908300C856A8 /* KitPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = KitPlayground.playground; sourceTree = "<group>"; };
+		832B65A71AA890EA00C856A8 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		832B65AA1AA8931100C856A8 /* Auth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Auth.json; sourceTree = "<group>"; };
+		832B65AD1AA8942800C856A8 /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		832B65AF1AA8948C00C856A8 /* AuthTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthTests.swift; sourceTree = "<group>"; };
+		832B65BC1AA8974E00C856A8 /* AERecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AERecord.swift; path = Frameworks/AERecord/AERecord.swift; sourceTree = SOURCE_ROOT; };
+		832B65BE1AA89B1000C856A8 /* ZVTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZVTestCase.swift; sourceTree = "<group>"; };
 		83D753671AA827D200229467 /* ZVCoreDataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZVCoreDataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D7536B1AA827D200229467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83D7536C1AA827D200229467 /* ZVCoreDataKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZVCoreDataKit.h; sourceTree = "<group>"; };
@@ -53,9 +66,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		832B65A91AA891A200C856A8 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				832B65AA1AA8931100C856A8 /* Auth.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		832B65AC1AA8940D00C856A8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				832B65BC1AA8974E00C856A8 /* AERecord.swift */,
+				832B65AD1AA8942800C856A8 /* Auth.swift */,
+				832B65BE1AA89B1000C856A8 /* ZVTestCase.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		83D7535D1AA827D200229467 = {
 			isa = PBXGroup;
 			children = (
+				832B65A51AA8908300C856A8 /* KitPlayground.playground */,
 				83D753831AA828B800229467 /* LICENSE */,
 				83D753841AA828B800229467 /* README.md */,
 				83D753851AA828B800229467 /* ZVCoreDataKit.podspec */,
@@ -94,6 +126,7 @@
 		83D753761AA827D200229467 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				832B65AF1AA8948C00C856A8 /* AuthTests.swift */,
 				83D753791AA827D200229467 /* ZVCoreDataKitTests.swift */,
 				83D753771AA827D200229467 /* Supporting Files */,
 			);
@@ -103,6 +136,9 @@
 		83D753771AA827D200229467 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				832B65AC1AA8940D00C856A8 /* Classes */,
+				832B65A91AA891A200C856A8 /* Fixtures */,
+				832B65A61AA890EA00C856A8 /* Model.xcdatamodeld */,
 				83D753781AA827D200229467 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -205,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832B65AB1AA8931100C856A8 /* Auth.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +259,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832B65BD1AA8974E00C856A8 /* AERecord.swift in Sources */,
 				83D7537A1AA827D200229467 /* ZVCoreDataKitTests.swift in Sources */,
+				832B65A81AA890EA00C856A8 /* Model.xcdatamodeld in Sources */,
+				832B65BF1AA89B1000C856A8 /* ZVTestCase.swift in Sources */,
+				832B65AE1AA8942800C856A8 /* Auth.swift in Sources */,
+				832B65B01AA8948C00C856A8 /* AuthTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +371,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ZVCoreDataKit/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -344,7 +386,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ZVCoreDataKit/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -363,7 +405,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ZVCoreDataKitTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -376,7 +418,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ZVCoreDataKitTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -413,6 +455,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		832B65A61AA890EA00C856A8 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				832B65A71AA890EA00C856A8 /* Model.xcdatamodel */,
+			);
+			currentVersion = 832B65A71AA890EA00C856A8 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 83D7535E1AA827D200229467 /* Project object */;
 }

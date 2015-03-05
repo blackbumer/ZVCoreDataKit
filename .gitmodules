@@ -1,0 +1,3 @@
+[submodule "Frameworks/AERecord"]
+	path = Frameworks/AERecord
+	url = git@github.com:tadija/AERecord.git
